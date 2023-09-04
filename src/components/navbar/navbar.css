@@ -1,0 +1,17 @@
+  .fa-shopping-cart {
+    color: #ffff;
+  }
+
+  .cart-count {
+    color: #fff;
+    border-radius: 50%;
+    width: 24px;
+    height: 24px;
+    font-size: 14px;
+    margin-top: 5px;
+  }
+
+  .fa-shopping-cart {
+    margin-left: 25px;
+    margin-right: 7px;
+  }
