@@ -1,14 +1,10 @@
 import React from 'react';
+import "./itemlistcontainer.css"
 
-function ItemListContainer() {
-
-  const cartItemCount = 0; 
-
+function ItemListContainer(props) {
   return (
-    <div>
-      <div>
-        <div className="cart-count">({cartItemCount})</div>
-      </div>
+    <div className='welcomee'>
+      <h1>{props.greeting}</h1>
     </div>
   );
 }

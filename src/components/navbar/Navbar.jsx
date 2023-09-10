@@ -1,6 +1,5 @@
 import React from 'react';
 import CartWidget from '../CartWidget/CartWidget';
-import ItemListContainer from '../ItemListContainer/ItemListContainer';
 import './navbar.css';
 
 
@@ -29,7 +28,6 @@ function Navbar() {
           </ul>
           <div className="ml-auto d-flex">
             <CartWidget />
-            <ItemListContainer />
           </div>
         </div>
       </div>
