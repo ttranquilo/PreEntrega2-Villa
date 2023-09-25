@@ -1,38 +1,21 @@
-import React from 'react';
-import CartWidget from '../CartWidget/CartWidget';
-import './navbar.css';
+import './navbar.css'
+import CartWidget from '../CartWidget/CartWidget'
+import { NavLink, Link } from 'react-router-dom'
 
-
-function Navbar() {
-  return (
-    <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
-      <div className="container">
-        <a className="navbar-brand" href="/">LatinoGang</a>
-        <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span className="navbar-toggler-icon"></span>
-        </button>
-        <div className="collapse navbar-collapse" id="navbarNav">
-          <ul className="navbar-nav">
-            <li className="nav-item">
-              <a className="nav-link" href="/">Inicio</a>
-            </li>
-            <li className="nav-item">
-              <a className="nav-link" href="/acerca">Acerca de</a>
-            </li>
-            <li className="nav-item">
-              <a className="nav-link" href="/servicios">Servicios</a>
-            </li>
-            <li className="nav-item">
-              <a className="nav-link" href="/contacto">Contacto</a>
-            </li>
-          </ul>
-          <div className="ml-auto d-flex">
-            <CartWidget />
-          </div>
-        </div>
-      </div>
-    </nav>
-  );
+function NavBar (){
+    return ( 
+        <nav className='NavBar'>
+            <Link to='/'>
+                <h3 className='Logo'>LatinoGang</h3>
+            </Link >
+            <div className='Categories'>
+                <NavLink to={`/category/streaming1`} className={({ isActive }) => isActive ? 'ActiveOption' : 'Option'}>Ofertas</NavLink>
+                <NavLink to={`/category/streaming2`} className={({ isActive }) => isActive ? 'ActiveOption' : 'Option'}>Ofertas</NavLink>
+                <NavLink to={`/category/streaming3`} className={({ isActive }) => isActive ? 'ActiveOption' : 'Option'}>Ofertas</NavLink>
+            </div>
+            <CartWidget/>
+        </nav>
+    )
 }
 
-export default Navbar;
+export default NavBar

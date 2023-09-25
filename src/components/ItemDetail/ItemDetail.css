@@ -1,0 +1,11 @@
+.ItemImgg{
+    width: 70%;
+    height: 120px;
+    object-fit: cover;
+    border: 2px solid #0026ff;
+    border-radius: 25px;
+}
+.CarItem{
+    display: flex;
+    flex-direction: column;
+}
